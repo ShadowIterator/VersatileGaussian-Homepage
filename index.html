@@ -92,25 +92,25 @@
             <span class="author-block">
               Renjie Li<sup>1</sup>,</span>
             <span class="author-block">
-              Zhiwen Fan<sup>3</sup>,
+              Zhiwen Fan<sup>2</sup>,
             </span>
 			<span class="author-block">
-              Bohua Wang<sup>2</sup>,</span>
+              Bohua Wang<sup>3</sup>,</span>
             <span class="author-block">
-              Peihao Wang<sup>3</sup>,
+              Peihao Wang<sup>2</sup>,
             </span>
             <span class="author-block">
-              Zhangyang Wang<sup>4</sup>,
+              Zhangyang Wang<sup>2</sup>,
             </span>
             <span class="author-block">
-              Xi Wu<sup>1</sup>,
+              Xi Wu<sup>4</sup>,
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Tsinghua University,</span>
-            <span class="author-block"><sup>2</sup>Xi'an Jiaotong University,</span>
-            <span class="author-block"><sup>3</sup>UT Austin, </span>
+            <span class="author-block"><sup>2</sup>UT Austin,</span>
+            <span class="author-block"><sup>3</sup>Xi'an Jiaotong University, </span>
 			<span class="author-block"><sup>4</sup>Chengdu University of Information Technology</span>
           </div>
 
@@ -196,6 +196,7 @@
         <img align="middle" src="Versatile_Gaussian_Homepage/THU.jpg" alt="this slowpoke moves" width="100">
         <img align="middle" src="Versatile_Gaussian_Homepage/XJTU.jpg" alt="this slowpoke moves" width="100">
         <img align="middle" src="Versatile_Gaussian_Homepage/UT_round.png" alt="this slowpoke moves" width="100">
+		<img align="middle" src="Versatile_Gaussian_Homepage/cuit.webp" alt="this slowpoke moves" width="100">
         </center>
       <p></p>
 
@@ -273,6 +274,30 @@
 </div>
 </section>
 
+<section>
+
+  <div class="container is-max-desktop">
+    <hr>
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+
+      <div class="column is-centered">
+        <div class="content is-centered">
+          <p>
+            <img src="Versatile_Gaussian_Homepage/teaser_release.png" width="100%">
+          </p>
+          <p>
+            <strong>VersatileGaussian</strong>  unifies <u>Gaussian Splatting</u> and <u>Multi-task Learning</u> for representing versatile label maps, and can operate in real-time (35FPS) while rendering any viewpoint in a large-scale scene (left). VersatileGaussian achieves optimal performance in multi-task metrics and rendering efficiency (right) for synthesizing various label maps.
+          </p>
+          <p></p>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+  </div>
+</section>
+ <!--
 <section class="section">
   <div class="container is-max-desktop">
     <!-- <div class="column is-centered">
@@ -280,7 +305,7 @@
         <img src="./ULIP_figure2_gif_resize.gif" alt="this slowpoke moves" height="100%" />
 
       </div>
-    </div> -->
+    </div>
     <div class="publication-animation">
       <video controls height="100%">
         <source src="Versatile_Gaussian_Homepage/versatilegs.mp4" type="video/webm">
@@ -291,7 +316,7 @@
     </div>
   </div>
 </section>
-
+ -->
 <section>
     <!-- Abstract. -->
   <div class="container is-max-desktop">
@@ -343,7 +368,6 @@ Experiments on both ScanNet and Replica datasets reveal that VersatileGaussian a
 </section>
 
 <section>
-
   <div class="container is-max-desktop">
     <hr>
     <!-- Concurrent Work. -->
@@ -368,6 +392,36 @@ Experiments on both ScanNet and Replica datasets reveal that VersatileGaussian a
     <!--/ Concurrent Work. -->
   </div>
 </section>
+
+
+
+<section>
+  <div class="container is-max-desktop">
+    <hr>
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+
+      <div class="column is-centered">
+        <div class="column is-centered has-text-centered">
+          <h2 class="title is-3">Quantitative Results</h2>
+        </div>
+        <div class="content is-centered", style="text-align:center;">
+          <p>
+            <img src="Versatile_Gaussian_Homepage/main_table.png" width="100%">
+          </p>
+          <p>
+			<strong> Comparison on Replica and SceneNet Data.</strong> The comparison is conducted on the Replica and SceneNet testing datasets used in MuvieNeRF. VersatileGaussian is initialized by Colmap. The performances of the rest approaches are derived from MuvieNeRF. The overall drop indicates how much the other approaches underperform VersatileGaussisn. RGB, KP, SH, ED, SN, and SL stand for RGB image synthesis, key point detection, reshading, edge detection, surface normal estimation, and semantic segmentation.   
+     	  </p>
+          <p></p>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+  </div>
+</section>
+
+
 <section>
   <div class="container is-max-desktop">
     <hr>
@@ -375,7 +429,7 @@ Experiments on both ScanNet and Replica datasets reveal that VersatileGaussian a
     <!-- <div class="columns is-centered has-text-centered"> -->
     <div class="column">
       <div class="column is-centered has-text-centered">
-        <h2 class="title is-3">Video Demo</h2>
+        <h2 class="title is-3">Rendered Videos</h2>
       </div>
       <!-- <h2 class="title is-3">Animation</h2> -->
       <div class="publication-animation">
