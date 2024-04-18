@@ -353,13 +353,10 @@
             fidelity.
           </p> -->
           <p>
-            The acquisition of multi-task labels in 3D scenes is essential for numerous real-world applications.
-Existing methods either adopt the analysis-by-synthesis approach, where 2D label maps are obtained on the synthesized novel views, or leverage Neural Radiance Field (NeRF) which simultaneously represents color images and other label maps. However, these methods hardly balance the inference efficiency and rendering quality.
-In this paper, we present <strong>VersatileGaussian</strong>, a real-time method that renders <u>Versatile</u> label maps in any new views, leveraging <u>Gaussian</u> Splatting.
-To enable 3D Gaussians to represent versatile labels, we propose attaching Gaussians with multi-task features and enabling a label map rasterizer.
-Central to the accuracy of the versatile rasterization is a Task Correlation Attention module, where we utilize attentions to effectively capture cross-task correlations by establishing a soft weighting mechanism to propagate task-wise knowledge.
-Experiments on both ScanNet and Replica datasets reveal that VersatileGaussian achieves state-of-the-art multi-task accuracy, while also ensuring real-time rendering speed (35 FPS). We plan to release the code.
-          </p>
+	  The acquisition of multi-task (MT) labels in 3D scenes is crucial for a wide range of real-world applications. Traditional methods generally employ an analysis-by-synthesis approach, generating 2D label maps on novel synthesized views, or utilize Neural Radiance Field (NeRF), which concurrently represents label maps. Yet, these approaches often struggle to balance inference efficiency with MT label quality. Specifically, they face limitations such as (a) constrained rendering speeds due to NeRF pipelines, and (b) the implicit representation of MT fields that can result in continuity artifacts during rendering.
+Recently, 3D Gaussian Splatting has shown promise in achieving real-time rendering speeds without compromising rendering quality. In our research, we address the challenge of enabling 3D Gaussian Splatting to represent <u>Versatile</u> MT labels. Simply attaching MT attributes to explicit Gaussians compromises rendering quality due to the lack of cross-task information flow during optimization.
+We introduce architectural and rasterizer design to effectively overcome this issue. Our <strong>VersatileGaussian</strong> model innovatively associates Gaussians with shared MT features and incorporates a feature map rasterizer. The cornerstone of this versatile rasterization is the Task Correlation Attention module, which fosters cross-task correlations through a soft weighting mechanism that disseminates task-specific knowledge. Across experiments on the ScanNet and Replica datasets shows that VersatileGaussian not only sets a new benchmark in MT accuracy but also maintains real-time rendering speeds (35 FPS). Importantly, this model design facilitates mutual benefits across tasks, leading to improved quality in novel view synthesis.
+	  </p>
         </div>
       </div>
     </div>
